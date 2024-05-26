@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>NEGO</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+        #authForm, #secretContent {
+            background: rgb(46, 46, 46);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+        #authForm input {
+            margin-bottom: 1rem;
+        }
+        .container {
+            margin-top: 2rem;
+        }
+        .card {
+            margin-bottom: 2rem;
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title img {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="authForm">
+        <h2>Sign Up or Sign In</h2>
+        <input type="email" placeholder="Email" id="userEmail" class="form-control mb-2" />
+        <input type="password" placeholder="Password" id="userPassword" class="form-control mb-2" />
+        <button id="signUpButton" class="btn btn-primary w-100 mb-2">Sign Up</button>
+        <button id="signInButton" class="btn btn-secondary w-100">Sign In</button>
+    </div>
+
+    <div id="secretContent">
+        <div class="title">
+            <img src="images/logo.png" alt="Logo" width="50" height="50">
+            <h2>NEGO</h2>
+        </div>
+        <div class="container text-center mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/3.png" class="card-img-top" alt="Product 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">J4 Retro SB Pine Green</h5>
+                            <p class="card-text">9US | BNDS (Fitted) ₱21,000 </p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/2.png" class="card-img-top" alt="Product 2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Handball Spezial Black Gum</h5>
+                            <p class="card-text">10.5US | 9/10 ₱6,000</p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/1.png" class="card-img-top" alt="Product 3" />
+                        <div class="card-body">
+                            <h5 class="card-title">J1 High Lost & Found</h5>
+                            <p class="card-text">9.5US | PADS ₱18,000</p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/6.png" class="card-img-top" alt="Product 4" />
+                        <div class="card-body">
+                            <h5 class="card-title">Yeezy Slide Slate Marine</h5>
+                            <p class="card-text">11US | 9/10 ₱4,000</p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/5.png" class="card-img-top" alt="Product 5" />
+                        <div class="card-body">
+                            <h5 class="card-title">Cons x Golf Le Fleur Velvet Brown</h>
+                            <p class="card-text">10.5US | PADS ₱6,000</p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/4.png" class="card-img-top" alt="Product 6" />
+                        <div class="card-body">
+                            <h5 class="card-title">Supreme Nike SB Low Rammellzee</h5>
+                            <p class="card-text">10.5US | BNDS ₱28,000</p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/9.png" class="card-img-top" alt="Product 7" />
+                        <div class="card-body">
+                            <h5 class="card-title">Adidas Samba OG Halo Blue</h5>
+                            <p class="card-text">9US | BNDS (Fitted) ₱6,500</p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/7.png" class="card-img-top" alt="Product 8" />
+                        <div class="card-body">
+                            <h5 class="card-title">Yeezy Boost 350 V2 Carbon</h5>
+                            <p class="card-text">13US | 9/10 ₱7,000</p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/8.png" class="card-img-top" alt="Product 9" />
+                        <div class="card-body">
+                            <h5 class="card-title">J5 Retro Off-White Muslin</h5>
+                            <p class="card-text">9US | PADS ₱25,000</p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="signOutButton" class="btn btn-danger mt-5">Sign Out</button>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+        import {
+            getAuth,
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword,
+            onAuthStateChanged,
+            signOut,
+        } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+
+        const firebaseConfig = {
+    apiKey: "AIzaSyAQNHQ6xLPsZw-PeTBBCDTQJC1gx6e3aZc",
+    authDomain: "okay-tayo.firebaseapp.com",
+    projectId: "okay-tayo",
+    storageBucket: "okay-tayo.appspot.com",
+    messagingSenderId: "742324585933",
+    appId: "1:742324585933:web:2e470309d81894a2297084"
+  };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const userEmail = document.querySelector("#userEmail");
+        const userPassword = document.querySelector("#userPassword");
+        const authForm = document.querySelector("#authForm");
+        const secretContent = document.querySelector("#secretContent");
+        const signUpButton = document.querySelector("#signUpButton");
+        const signInButton = document.querySelector("#signInButton");
+        const signOutButton = document.querySelector("#signOutButton");
+
+        secretContent.style.display = "none";
+
+        const userSignUp = async () => {
+            const signUpEmail = userEmail.value;
+            const signUpPassword = userPassword.value;
+            createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    console.log(user);
+                    Swal.fire("Your Account is successfully created!");
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    console.log(errorCode + errorMessage);
+                });
+        };
+
+        const userSignIn = async () => {
+            const signInEmail = userEmail.value;
+            const signInPassword = userPassword.value;
+            signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    Swal.fire("You have signed in successfully!");
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    console.log(errorCode + errorMessage);
+                });
+        };
+
+        const checkAuthState = async () => {
+            onAuthStateChanged(auth, (user) => {
+                if (user) {
+                    authForm.style.display = "none";
+                    secretContent.style.display = "block";
+                } else {
+                    authForm.style.display = "block";
+                    secretContent.style.display = "none";
+                }
+            });
+        };
+
+        const userSignOut = async () => {
+            await signOut(auth);
+            Swal.fire("User Logout");
+        };
+
+        checkAuthState();
+
+        signUpButton.addEventListener("click", userSignUp);
+        signInButton.addEventListener("click", userSignIn);
+        signOutButton.addEventListener("click", userSignOut);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
